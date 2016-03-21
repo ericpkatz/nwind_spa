@@ -15,11 +15,15 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0",
+    "supertest-as-promised": "^3.0.0"
   },
   "dependencies": {
     "angular": "^1.5.1",
     "body-parser": "^1.15.0",
+    "pg": "^4.5.1",
+    "sequelize": "^3.19.3",
     "swig": "^1.4.2"
   },
   "description": ""
