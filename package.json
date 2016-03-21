@@ -1,0 +1,26 @@
+{
+  "name": "nwind_sorter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "test-dev": "CONN=postgres://localhost/nwind-test nodemon ./node_modules/mocha/bin/mocha test/server/**/*.js",
+    "start-dev": "CONN=postgres://localhost/nwind nodemon server",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "angular": "^1.5.1",
+    "body-parser": "^1.15.0",
+    "swig": "^1.4.2"
+  },
+  "description": ""
+}
