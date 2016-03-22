@@ -1,5 +1,5 @@
-var router = require('express').Router();
-module.exports = router;
+var app = require('express').Router();
+module.exports = app;
 
 app.get('/', function(req, res, next){
   Product.findAll({ order: 'priority' })
