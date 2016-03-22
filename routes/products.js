@@ -1,4 +1,6 @@
 var app = require('express').Router();
+var Product = require('../db').models.Product;
+
 module.exports = app;
 
 app.get('/', function(req, res, next){
