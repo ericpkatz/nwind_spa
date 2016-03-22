@@ -27,7 +27,7 @@ app.get('/api/products', function(req, res, next){
   Product.findAll({ order: 'priority' })
     .then(function(products){
       res.send(products);
-    });
+    }, next);
 });
 
 app.post('/api/products', function(req, res, next){
@@ -36,7 +36,7 @@ app.post('/api/products', function(req, res, next){
       res.send(product);
     }, function(){
       res.sendStatus(404);
-    });
+    }, next);
 });
 
 app.put('/api/products/:id', function(req, res, next){
@@ -48,12 +48,12 @@ app.put('/api/products/:id', function(req, res, next){
     })
     .then(function(product){
       res.send(product);
-    });
+    }, next);
 });
 
 app.delete('/api/products/:id', function(req, res, next){
   Product.destroy({where: {id: req.params.id}})
     .then(function(){
       res.sendStatus(200);
-    });
+    }, next);
 });
