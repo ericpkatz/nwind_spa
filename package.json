@@ -12,7 +12,7 @@
     "test": "CONN=postgres://localhost/circle_test node ./node_modules/mocha/bin/mocha test/server/**/*.js",
     "test-dev": "CONN=postgres://localhost/nwind-test nodemon ./node_modules/mocha/bin/mocha test/server/**/*.js",
     "start-dev": "CONN=postgres://localhost/nwind nodemon server",
-    "start": "node server.js"
+    "start": "bower install && node server.js"
   },
   "author": "",
   "license": "ISC",
