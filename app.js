@@ -23,7 +23,7 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.use('/api/products', require('./routes/products');
+app.use('/api/products', require('./routes/products'));
 
 
 app.use(function(er, req, res, next){
