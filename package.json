@@ -1,6 +1,9 @@
 {
   "name": "nwind_sorter",
   "version": "1.0.0",
+  "engines" : {
+    "node" : "4.2.1"
+  },
   "main": "index.js",
   "directories": {
     "test": "test"
