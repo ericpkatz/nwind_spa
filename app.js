@@ -57,3 +57,7 @@ app.delete('/api/products/:id', function(req, res, next){
       res.sendStatus(200);
     }, next);
 });
+
+app.use(function(er, req, res, next){
+  res.status(500).send(er);
+});
